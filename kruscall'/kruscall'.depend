@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1701622655 source:c:\users\admin\documents\kruscall'\main.cpp
+	<iostream>
+	<fstream>
+
