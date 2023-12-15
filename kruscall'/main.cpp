@@ -6,7 +6,7 @@ struct muchie {
 } v[50];
 int main() {
     int a1, a2, m, n, i, j, cost, k, l, nr, t[50];
-    char nume[20][21] = {"Balti", "Chisinau", "Riscani", "Glodeni", "Nisporeni", "Telenesti", "Cahul", "Ungheni", "Comrat", "Taraclia" };
+    char nume[20][21] = {"Daniel", "Balti", "Chisinau", "Riscani", "Glodeni", "Nisporeni", "Telenesti", "Cahul", "Ungheni", "Comrat", "Taraclia" };
     muchie aux;
     ifstream fin("graphin.txt");
     fin  >> n >> m;
@@ -36,7 +36,7 @@ int main() {
             nr++;
             cost += v[i].c;
             //3 cout << v[i].x << " " << v[i].y << endl;
-             cout << "(" << nume[v[i].x] << "; " << v[i].y << ") = " << v[i].c << endl;
+             cout << "(" << nume[v[i].x] << "; " << nume[v[i].y] << ") = " << v[i].c << endl;
             k = t[v[i].x];
             l = t[v[i].y];
             for (j = 1; j <= n; j++) {
